@@ -172,6 +172,34 @@ footer {
   font-size: 13px;
   border: 1px solid #dbe7ff;
   box-shadow: 0 1px 0 rgba(10, 25, 77, 0.04);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.participant-name {
+  flex: 1;
+}
+
+.delete-participant {
+  background: none;
+  border: none;
+  color: #0b254a;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.delete-participant:hover {
+  background-color: rgba(11, 37, 74, 0.1);
+  color: #c62828;
 }
 
 /* message when no participants yet */
